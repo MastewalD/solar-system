@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    background-image: url('img/galaxy.gif');
+    background-size: cover;
+  }
+  h1 {
+    color:white;
+display: flex;
+justify-content: center;
+  }
+  input{
+   margin-left: 400px;
+   height: 30px;
+   
+  }
+  label{
+    color: white;
+
+  }
+  button{
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    
+    color:white
+  }
+  select{
+    height: 30px;
+  }
+  div{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 400px;
+    width: 1000px;
+   
+   margin: 100px;
+    
+  }
+        </style>
+
+        
+    </head>
+    <body>
+       <h1>Calculate the weight of an object on  a planet</h1>
+       <input placeholder="Mass in killogram" id="mass"  name="mass" />
+       
+       <select id="planet" name="planet" >
+         <option value="">--select planet--</option>
+         <option name="earth" value="earth" >Earth</option>
+         <option name="galaxy" value="galaxy">galaxy</option>
+         <option name="mercury" value="mercury">mercury</option>
+         <option name="mars" value="mars">mars</option>
+         <option name="moon" value="moon">moon</option>
+         <option name="neptune" value="neptune">neptune</option>
+         <option name="uranus" value="uranus">uranus</option>
+         <option name="pluto" value="pluto">pluto</option>
+         <option name="saturn" value="saturn">saturn</option>
+         <option name="sun" value="sun">sun</option>
+         <option name="jupiter" value="jupiter">jupiter</option>
+         <option name="venus" value="venus">venus</option>
+       </select>
+       <button onclick="weight(mass,planet)">Calculate weight</button>
+       <div id="whole" >
+<p id="weight"></p>
+       </div>
+  
+<script src="script/main.js"></script>
+    </body>
+</html>
+
